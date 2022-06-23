@@ -12,6 +12,8 @@
   --heebo-font: 'Heebo', sans-serif;
 }
 
+/* Basic style */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +31,8 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Header Style */
 
 header {
   /* background-color: #aeaeae; */
@@ -67,4 +71,34 @@ header nav .navbar-list .navbar-item {
   color: #000;
   text-decoration: none;
   font-family: var(--heebo-font);
+}
+
+/* Main style */
+
+main {
+  padding: 150px 0;
+}
+
+main .short-description {
+  width: 506px;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.jc-center {
+  justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
 }
