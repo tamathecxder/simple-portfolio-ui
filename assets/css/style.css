@@ -21,6 +21,50 @@
 body {
   font-family: var(--heebo-font);
   font-size: 16px;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  /* background-color: #aeaeae; */
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+header nav .navbar-brand a {
+  color: #000;
+  text-decoration: none;
+}
+
+header nav .navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+header nav .navbar-list .navbar-item {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  font-family: var(--heebo-font);
+}
