@@ -146,7 +146,7 @@ article #blog {
   background-color: var(--blog-bg);
   width: 100%;
   height: 52vh;
-  padding: 10px 0;
+  padding: 2px 0;
 }
 
 article #blog .blog-information {
@@ -219,6 +219,29 @@ article #blog .new-articles .card-body p {
 
 
 
+
+/* Works style */
+
+article #works {
+  width: 100%;
+  height: 52vh;
+  padding: 10px 0;
+}
+
+article #works .works-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+}
+
+article #works .works-information .featured-works span {
+  font-size: 22px;
+  line-height: 60px;
+  color: var(--dark-color);
+}
 
 
 
