@@ -243,6 +243,68 @@ article #works .works-information .featured-works span {
   color: var(--dark-color);
 }
 
+article #works .works-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article #works .works-project .project-image {
+  width: 30%;
+  height: 320px;
+  background-color: #fff;
+  padding: 26px 0;
+}
+
+article #works .works-project .project-image img {
+  width: 85%;
+}
+
+article #works .works-project .project-description {
+  width: 70%;
+  height: 320px;
+  background-color: #fff;
+  padding: 26px 0;
+  color: var(--dark-color);
+}
+
+article #works .works-project .project-description h2 {
+  font-size: 30px;
+  font-weight: 700; 
+  margin-bottom: 16px;
+}
+
+article #works .works-project .project-description .more-info {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  margin-bottom: 16px;
+}
+
+article #works .works-project .project-description .more-info .pill {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 40px;
+  background-color: var(--dark-color);
+}
+
+article #works .works-project .project-description .more-info .category {
+  height: 30px;
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+article #works .works-project .project-description .project-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
 
 
 
