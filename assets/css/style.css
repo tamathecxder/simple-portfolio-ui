@@ -79,8 +79,21 @@ main {
   padding: 150px 0;
 }
 
-main .short-description {
-  width: 506px;
+main .my-description {
+  width: 70%;
+}
+
+main .my-photo {
+  width: 30%;
+}
+
+main .my-photo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-color);
+  object-fit: cover;
+  object-position: -50% 40%;
 }
 
 .display-flex {
