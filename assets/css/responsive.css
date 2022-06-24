@@ -15,7 +15,6 @@
 
 @media only screen and (max-width: 575px) {
   .container {
-    width: 480px;
     padding: 0 20px;
     margin: 0 auto;
   }
@@ -25,36 +24,37 @@
   }
 
   main .container {
-    padding: 200px 0 60px 0;
-    display: flex !important;
-    flex-direction: column !important;
+    padding: 200px 0 0 0;
+  }
+
+  main .aside-rule {
+    display: block !important;
+    width: 350px;
+    margin: 0 auto;
   }
   
   main .my-description {
-    width: auto;
-    height: auto;
-    position: relative !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   main .my-description .heading {
     width: 100%;
-    padding: 0 20px;
-    font-size: 32px;
     text-align: center;
-    line-height: 45px;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 30px;
+    line-height: 48px;
+    margin-bottom: 20px;
   }
   
   main .my-description .short-paragraph {
-    background-color: #FF6464;
     width: 100%;
     text-align: center;
-    font-size: 16px;
-    padding: 1rem 0;
-    position: absolute;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
   main .my-photo {
@@ -69,6 +69,106 @@
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  main .cta-resume .btn-download {
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    color: #fff;
+    padding: 1.25rem 2rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  main .cta-resume .btn-download:hover {
+    background-color: var(--dark-color);
+    color: #000;
+  }
+
+
+
+
+  /* Blog RESPONSIVE */
+
+  article {
+    padding: 20px 0;
+  }
+
+  article #blog {
+    width: 100%;
+    height: auto;
+    padding: 4px 0 100px 0;
+  }
+
+  article #blog .blog-information {
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+  }
+
+  article #blog .blog-information .recent-posts span {
+    font-size: 22px;
+    line-height: 60px;
+    color: var(--dark-color);
+  }
+
+  article #blog .blog-information .view-all a {
+    display: none;
+  }
+
+  article #blog .new-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  article #blog .new-articles .card-article {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 26px;
+    border-radius: 24px;
+  }
+
+  article #blog .new-articles .card-article .card-header {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  article #blog .new-articles .card-article .card-header .additional-info {
+    color: var(--dark-color);
+  }
+
+  article #blog .new-articles .card-article .card-header .additional-info h2 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  article #blog .new-articles .card-article .card-header .additional-info .date {
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block !important;
+  }
+
+  article #blog .new-articles .card-article .card-header .additional-info .category {
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block !important;
+  }
+
+  article #blog .new-articles .card-body {
+    color: var(--dark-color);
+  }
+
+  article #blog .new-articles .card-body p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
   }
 
 
