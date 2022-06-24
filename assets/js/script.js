@@ -1,22 +1,4 @@
-// $(document).ready(function () {
-//   console.log("Jquery is ready!");
-
-//   $("header nav .navbar-list li a").on("click", function (e) {
-//     const targetHref = $(this).attr("href");
-
-//     $("html, body").animate(
-//       {
-//         scrollTop: $(targetHref).offset().top,
-//       },
-//       650
-//     );
-
-//     e.preventDefault();
-//   });
-
-  
-// });
-
+// Hamburger menu
 document.addEventListener("DOMContentLoaded", () => {
     mobileMenu_init();
 
