@@ -82,9 +82,9 @@ header nav .navbar-list .navbar-item:hover {
 
 /* Mobile Menu Button */
 #mobile-menu {
-  position: absolute;
-  top: 50%;
-  right: 2rem;
+  position: fixed;
+  top: 4%;
+  right: 1rem;
   transform: translateY(-50%);
   z-index: 1;
   width: var(--mobile-menu-width);
@@ -94,12 +94,12 @@ header nav .navbar-list .navbar-item:hover {
 
 #mobile-menu span {
   position: absolute;
-  width: 80%;
-  height: 1px;
+  width: 75%;
+  height: 4px;
   left: 10%;
   top: 50%;
-  background-color: #21243D;
-  transform: all 0.3s ease-in-out;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
 }
 
 #mobile-menu span:first-of-type {
@@ -129,14 +129,14 @@ header nav .navbar-list .navbar-item:hover {
 #mobile-menu-content {
   width: 100%;
   height: calc(100vh - var(--header-height));
-  background-color: #00A8CC;
+  background: var(--dark-color);
   position: fixed;
   top: -100vh;
   left: 0;
   z-index: 5;
   display: flex;
   align-items: flex-start;
-  transform: top 0.7s ease-in-out;
+  transition: top 0.7s ease-in-out;
 }
 
 #mobile-menu-content.open {
@@ -160,11 +160,11 @@ header nav .navbar-list .navbar-item:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid var(--light-color);
 }
 
 #mobile-menu-content ul li:last-of-type {
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--light-color);
 }
 
 #mobile-menu-content ul li a {

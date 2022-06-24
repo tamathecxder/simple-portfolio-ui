@@ -25,9 +25,9 @@
     margin: 0 auto;
   }
 
-  /* header nav {
+  header nav .navbar-brand {
     display: none;
-  } */
+  }
 
   main .container {
     padding: 200px 0 0 0;
