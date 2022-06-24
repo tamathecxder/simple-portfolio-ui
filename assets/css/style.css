@@ -4,6 +4,9 @@
 /* my css variables */
 
 :root {
+  --header-height: 6rem;
+	--mobile-menu-width: 4rem;
+  
   --primary-color: #FF6464;
   --secondary-color: #00A8CC;
   --dark-color: #21243D;
@@ -73,6 +76,105 @@ header nav .navbar-list .navbar-item {
   font-family: var(--heebo-font);
 }
 
+header nav .navbar-list .navbar-item:hover {
+  border-bottom: 3px solid var(--primary-color);
+}
+
+/* Mobile Menu Button */
+#mobile-menu {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: var(--mobile-menu-width);
+  height: var(--mobile-menu-width);
+  cursor: pointer;
+}
+
+#mobile-menu span {
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  left: 10%;
+  top: 50%;
+  background-color: #21243D;
+  transform: all 0.3s ease-in-out;
+}
+
+#mobile-menu span:first-of-type {
+  top: 25%;
+}
+
+#mobile-menu span:last-of-type {
+  top: 75%;
+}
+
+#mobile-menu.open span {
+  opacity: 0;
+}
+
+#mobile-menu.open span:first-of-type,
+#mobile-menu.open span:last-child {
+  transform: rotate(45deg);
+  opacity: 1;
+  top: 50%;
+} 
+
+#mobile-menu.open span:last-of-type {
+  transform: rotate(-45deg);
+}
+
+/* Mobile Menu Content */
+#mobile-menu-content {
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background-color: #00A8CC;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  transform: top 0.7s ease-in-out;
+}
+
+#mobile-menu-content.open {
+  top: var(--header-height);
+}
+
+#mobile-menu-content > div {
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#mobile-menu-content > div > ul {
+  width: 100%;
+}
+
+#mobile-menu-content ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid var(--primary-color);
+}
+
+#mobile-menu-content ul li:last-of-type {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+#mobile-menu-content ul li a {
+  padding: 2rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+
 /* Main style */
 
 main {
@@ -141,6 +243,7 @@ main .cta-resume .btn-download {
 
 main .cta-resume .btn-download:hover {
   background-color: var(--dark-color);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Blog style */
@@ -329,9 +432,10 @@ article #works .works-project .project-description .project-text {
   background-color: #cfd4da;
 }
 
+/* Footer / Contact style */
+
 footer {
   padding: 100px 0 40px 0;
-  /* background-color: #00A8CC; */
 }
 
 footer #contact {
@@ -369,6 +473,9 @@ footer #contact .copyright .my-github-link {
   color: #000;
   font-weight: bold;
 }
+
+
+
 
 /* CUSTOM CSS */
 .bg-danger {
