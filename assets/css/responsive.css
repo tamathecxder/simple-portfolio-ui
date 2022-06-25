@@ -13,13 +13,22 @@
   --heebo-font: 'Heebo', sans-serif;
 }
 
+/*** extra small screen */
+@media (max-width: 374px) {
+  .container {
+    height: auto !important;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
 @media (max-width: 1024px) {
   header nav ul li {
     display: none;
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (min-width: 375px) and (max-width: 575px) {
   .container {
     padding: 0 20px;
     margin: 0 auto;
