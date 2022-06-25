@@ -40,6 +40,9 @@ body {
 
 header {
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header nav {
@@ -48,12 +51,22 @@ header nav {
   align-items: center;
 }
 
-header nav .navbar-brand {
+header nav .navbar-brand a {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.nav-colored {
+  background-color: #e9e9e9;
+  transition: all 1s ease-in-out;
+}
+
+.nav-transparent {
+  background-color: transparent;
+  transition: all 1s ease-in-out;
 }
 
 header nav .navbar-brand a {
@@ -90,11 +103,12 @@ header nav .navbar-list .navbar-item:hover {
   width: var(--mobile-menu-width);
   height: var(--mobile-menu-width);
   cursor: pointer;
+  background-color: transparent;
 }
 
 #mobile-menu span {
   position: absolute;
-  width: 75%;
+  width: 80%;
   height: 4px;
   left: 10%;
   top: 50%;

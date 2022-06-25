@@ -11,4 +11,17 @@ $(document).ready(function () {
 
     e.preventDefault();
   });
+
+  const header = ('header');
+  const nav = ('header nav .navbar-brand a');
+  $(window).on('scroll', function(e) {
+    // console.log(window.scrollY);
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+      $(header).addClass('nav-colored');
+      $(header).removeClass('nav-transparent');
+    } else {
+      $(header).addClass('nav-transparent');
+      $(header).removeClass('nav-colored');
+    }
+  })
 });
