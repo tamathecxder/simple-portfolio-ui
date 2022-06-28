@@ -195,10 +195,13 @@ main {
   padding: 120px 0 60px 0;
 }
 
+<<<<<<< HEAD
 main aside.container {
   padding: 10px 0 10px 0;
 }
 
+=======
+>>>>>>> d7634904c3bc26cad06ef22e8cae6dd72f3d4802
 main aside {
   display: flex;
   justify-content: center;
