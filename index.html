@@ -12,8 +12,7 @@
 </head>
 <body>
 
-  <!-- Header section -->
-  <section id="home" style="padding: 0; margin: 0;"></section>
+  <!-- header section -->
   <header>
     <div class="container">
       <nav>
@@ -37,146 +36,152 @@
       </nav>
     </div>
   </header>
-
-  <!-- Main section -->
+  
+  <!-- main section -->
   <main>
-    <div class="container">
-      <!-- Aside section -->
-      <aside class="aside-rule">
-        <div class="my-description">
-          <h1 class="heading">
-            Hi, I am Yudistira Eka Pratama,
-            Front-end Web Developer
-          </h1>
-          <p class="short-paragraph">
-            I am a tech enthusiast and a graduate of a vocational school majoring in software engineering in Cianjur, West Java. I am also a junior frontend web developer, who is interested in developing user interfaces in a website ecosystem, and also interested in JavaScript technology and all kinds of frameworks and libraries.
-          </p>
-        </div>
-        <div class="my-photo">
-          <img src="./assets/img/saya.jpg" alt="Foto saya">
-        </div>
-      </aside>
-      <div class="cta-resume">
-        <button type="submit" class="btn-download">Download Resume</button>
-      </div>
-    </div>
-  </main>
-  
-  <!-- Article section -->
-  <article>
-    <section id="blog">
-      <div class="container">
-        <div class="blog-information">
-          <div class="recent-posts">
-            <span>Recent Posts</span>
-          </div>
-          <div class="view-all">
-            <a href="#">View all</a>
-          </div>
-        </div>
-        <div class="new-articles">
-          <div class="card-article">
-            <div class="card-header">
-              <div class="additional-info">
-                <h2>Creating an Admin Dashboard page using TailwindCSS 3</h2>
-                <span class="date margin-y-20">
-                  14 Maret 2022 &nbsp;|
-                </span>
-                <span class="category margin-y-20">
-                  Design, Pattern
-                </span>
-              </div>
-            </div>
-            <div class="card-body">
-              <p>
-                Making a website display, especially a dashboard type, is sometimes very difficult, especially when using Vanilla CSS, it is clear that the time and effort required will be very large and of course tiring. Luckily we live in an easy era, everything that used to be considered difficult is now made easier with various technologies.
-              </p>
-            </div>
-          </div>
-          <div class="card-article">
-            <div class="card-header">
-              <div class="additional-info">
-                <h2>What is React JS and why should we learn about it?</h2>
-                <span class="date margin-y-20">
-                  23 Juni 2022 &nbsp;|
-                </span>
-                <span class="category margin-y-20">
-                  Web Design, Styling-kit
-                </span>
-              </div>
-            </div>
-            <div class="card-body">
-              <p>
-                React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
-              </p>
-            </div>
-          </div>
-          
+    <aside class="container">
+      <div class="my-description">
+        <h1 class="heading">
+          Hi, I am Yudistira Eka Pratama,
+          Front-end Web Developer
+        </h1>
+        <p class="short-paragraph">
+          I am a tech enthusiast and a graduate of a vocational school majoring in software engineering in Cianjur, West Java. I am also a junior frontend web developer, who is interested in developing user interfaces in a website ecosystem, and also interested in JavaScript technology and all kinds of frameworks and libraries.
+        </p>
+        <div class="cta-resume">
+          <button type="submit" class="btn-download">Download Resume</button>
         </div>
       </div>
-    </section>
-    <section id="works">
-      <div class="container">
-        <div class="works-information">
-          <div class="featured-works">
-            <span>Featured Works</span>
-          </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="works-project">
-          <div class="project-image">
-            <img src="./assets/img/project1.png" alt="project1">
-          </div>
-          <div class="project-description">
-            <h2>Designing The Dashboard</h2>
-            <div class="more-info">
-              <span class="pill">2020</span>
-              <span class="category">Dashboard</span>
-            </div>
-            <p class="project-text">
-              Designing a UI dashboard for a company in the electronics sector, then styling the UI using the Bootstrap 5 styling kit and a bit of JQuery. This project is allowed to be shared with the public for the purpose of adding it to my personal portfolio
-            </p>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="works-project">
-          <div class="project-image">
-            <img src="./assets/img/project2.png" alt="project2">
-          </div>
-          <div class="project-description">
-            <h2>Vibrant Portraits of 2021</h2>
-            <div class="more-info">
-              <span class="pill">2021</span>
-              <span class="category">Art</span>
-            </div>
-            <p class="project-text">
-              A graphic design work inspired by a famous graphic artist in the United States. Made using Adobe Illustrator software and published last year. I turned this work into an NFT and thankfully, it turns out that some people bought it and made it their personal NFT collection
-            </p>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="works-project">
-          <div class="project-image">
-            <img src="./assets/img/project3.png" alt="project3">
-          </div>
-          <div class="project-description">
-            <h2>36 Days of Malayam type</h2>
-            <div class="more-info">
-              <span class="pill">2022</span>
-              <span class="category">Typography</span>
-            </div>
-            <p class="project-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </article>
 
-  <div class="custom-horizontal-line"></div>
+      <div class="my-photo">
+        <img src="./assets/img/saya.jpg" alt="Foto saya">
+      </div>
+    </aside>
+    
+
+    <!-- article (blog & works) section -->
+    <article>
+      <!-- start blog section -->
+      <section id="blog">
+        <div class="container">
+          <div class="blog-information">
+            <div class="recent-posts">
+              <span>Recent Posts</span>
+            </div>
+            <div class="view-all">
+              <a href="#">View all</a>
+            </div>
+          </div>
+          <div class="new-articles">
+            <div class="card-article">
+              <div class="card-header">
+                <div class="additional-info">
+                  <h2>Creating an Admin Dashboard page using TailwindCSS 3</h2>
+                  <span class="date margin-y-20">
+                    14 Maret 2022 &nbsp;|
+                  </span>
+                  <span class="category margin-y-20">
+                    Design, Pattern
+                  </span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  Making a website display, especially a dashboard type, is sometimes very difficult, especially when using Vanilla CSS, it is clear that the time and effort required will be very large and of course tiring. Luckily we live in an easy era, everything that used to be considered difficult is now made easier with various technologies.
+                </p>
+              </div>
+            </div>
+            <div class="card-article">
+              <div class="card-header">
+                <div class="additional-info">
+                  <h2>What is React JS and why should we learn about it?</h2>
+                  <span class="date margin-y-20">
+                    23 Juni 2022 &nbsp;|
+                  </span>
+                  <span class="category margin-y-20">
+                    Web Design, Styling-kit
+                  </span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- end blog section -->
   
-  <!-- Footer -->
+      <!-- start works section -->
+      <section id="works">
+        <div class="container">
+          <div class="works-information">
+            <div class="featured-works">
+              <span>Featured Works</span>
+            </div>
+          </div>
+          <!-- Project 1 -->
+          <div class="works-project">
+            <div class="project-image">
+              <img src="./assets/img/project1.png" alt="project1">
+            </div>
+            <div class="project-description">
+              <h2>Designing The Dashboard</h2>
+              <div class="more-info">
+                <span class="pill">2020</span>
+                <span class="category">Dashboard</span>
+              </div>
+              <p class="project-text">
+                Designing a UI dashboard for a company in the electronics sector, then styling the UI using the Bootstrap 5 styling kit and a bit of JQuery. This project is allowed to be shared with the public for the purpose of adding it to my personal portfolio
+              </p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="works-project">
+            <div class="project-image">
+              <img src="./assets/img/project2.png" alt="project2">
+            </div>
+            <div class="project-description">
+              <h2>Vibrant Portraits of 2021</h2>
+              <div class="more-info">
+                <span class="pill">2021</span>
+                <span class="category">Art</span>
+              </div>
+              <p class="project-text">
+                A graphic design work inspired by a famous graphic artist in the United States. Made using Adobe Illustrator software and published last year. I turned this work into an NFT and thankfully, it turns out that some people bought it and made it their personal NFT collection
+              </p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="works-project">
+            <div class="project-image">
+              <img src="./assets/img/project3.png" alt="project3">
+            </div>
+            <div class="project-description">
+              <h2>36 Days of Malayam type</h2>
+              <div class="more-info">
+                <span class="pill">2022</span>
+                <span class="category">Typography</span>
+              </div>
+              <p class="project-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end works section -->
+  
+      <!-- Custom HR -->
+    </article>
+    <div class="custom-horizontal-line"></div>
+  </main>
+
+
+  <!-- fotter section -->
   <footer>
     <section id="contact">
       <div class="container">
@@ -200,12 +205,11 @@
       </div>
     </section>
   </footer>
-  
 
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!-- Smooth scrolling -->
+  <!-- My smooth scrolling script -->
   <script src="./assets/js/smooth-scrolling.js"></script>
 
   <!-- My JS -->
